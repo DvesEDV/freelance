@@ -2,19 +2,19 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 li {
-	list-style: none;
+  list-style: none;
 }
 a,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -22,233 +22,38 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 /* --------------- */
 
-/* Анатомия */
-/* 
-селектор {
-	css параметр;
-	css параметр;
-	css параметр;
-	css параметр;
+h2 {
+  color: red;
 }
- */
 
-/* CSS параметр */
-/*
-css свойство : значение свойства ;
-*/
+#style {
+	color: rgb(114, 255, 71);
+}
 
-/* Селекторы */
-
-/* Селектор тега */
 p {
-	/* Обратились ко ВСЕМ тегам P на странице */
-	/* color: red; */
-}
-span {
-	/* Обратились ко ВСЕМ тегам SPAN на странице */
-	/* color: red; */
+	color: tomato;
 }
 
-/* Селектор класса, начинается с точки */
-
-/*
-.имя класса {
-	css параметр;
-	...
-	css параметр;
-}
-*/
-/* 
-	При использовании обоих классов, 
-	с одинаковыми свойствами.
-	Применятся значения последнего 
-*/
-.block {
-	/* Обратились ко объектам с классом block на странице */
-	/* color: blue; */
-}
-.paragraph {
-	/* Обратились ко объектам с классом paragraph на странице */
-	/* color: tomato; */
+p.text 	{
+	color: firebrick;
 }
 
-/* Селектор ID */
-
-/*
-#имя id{
-	css параметр;
-	...
-	css параметр;
-}
-*/
-#message {
-	/* color: yellowgreen; */
+.text.item {
+	color: wheat;
 }
 
-/* Приоритет */
-
-/* 1. Порядок записи, при равнозначных селекторах */
-/* 
-p {
-	color: red;
-}
-*/
-/* Этот приоритетней */
-/* 
-p {
-	color: yellowgreen;
-}
-*/
-/* 
-.text {
-	color: seagreen;
-}
-
-/* Этот приоритетней*/
-/* 
-.text-2 {
-	color: red; 
-}
- */
-
-/* УТОЧНЕНИЕ */
-
-/* 2. Селектор класса приоритетней чем селектор тега */
-/*
-.text {
-	color: seagreen;
-}
-p {
-	color: red;
-}
-*/
-
-/* Селектор ID - самый приоритетный */
-
-/* Приоритет №1 */
-/* 
-#brown {
-	color: sienna;
-}
- */
-/* Приоритет №2 */
-/* 
-.text {
-	color: seagreen;
-}
-*/
-/* Приоритет №3 */
-/* 
-p {
-	color: red;
-}
- */
-
-/* 3. Уточняем обращением  */
-
-/* Комбинация селекторов */
-
-/* Только все SPAN c классом text */
-/* Приоритетней */
-/* 
-span.text {
-	color: springgreen;
-}
-.text {
-	color: red;
-}
- */
-
-/* Комбинация селекторов классов */
-/* Приоритетней всех комбинаций но не ID.
-	Чем больше классов тем больше приоритет
-*/
-/* 
-.text.green {
-	color: green;
-}
-*/
-
-/* Вложенность и приоритетность */
-
-/* Приоритеность №1 */
-/*
-.text .item {
-	color: green;
-}
-*/
-/* Приоритеность №2 */
-/*
-.text span {
-	color: orange;
-}
-*/
-/* Приоритеность №3 */
-/*
 p span {
-	color: red;
+	color: yellow;
 }
-*/
-/* Приоритеность №4 */
-/*
-span {
-	color: blue;
-}
-*/
-/*
-p.text {
-	color: orangered;
-}
-#text {
-	color: orangered;
-}
-*/
 
-/* Инлайновый стиль будет имет самый большой приоритет */
-
-/* Прочие селекторы */
-
-/* * - Обращение ко ВСЕ объектам */
-/*
-* {
-	color: red;
+.footer__link {
+  color: green;
 }
-.text *{
-	color: red;
-}
-*/
-
-/* Обращаемся и к .pargraph и к .text */
-/*
-.pargraph,
-.text {
-	color: red;
-}
-*/
-
-/* Только первый уровень вложенности */
-/* 
-.text > span {
-	color: red;
-}
- */
-/* Обращаемся только к первому следующему объекту того же уровня */
-/* 
-.text__item + p {
-	color: red;
-}
- */
-/* Обращаемся ко всем следующим объектам того же уровня */
-/* 
-.text__item ~ p {
-	color: red;
-}
- */

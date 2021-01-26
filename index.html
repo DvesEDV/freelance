@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
 		<title>Lesson 3</title>
 	</head>
 	<body>
 		<header class="header">
-			Я шапка
+			<h1 style="color: red">Стили</h1>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li><a href="#inline">Инлайновые стили</a></li>
+					<li><a href="#style">Тег style</a></li>
+					<li><a href="#link">Тег link</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main class="main">
-			<ul class="list">
-				<li>
-					<a href="" class="link">Пункт</a>
-				</li>
-				<li>
-					<a href="" class="link">Пункт</a>
-				</li>
-				<li>
-					<a href="" class="link">Пункт</a>
-				</li>
-			</ul>
-			<div class="text">
-				<h1>Заголовок</h1>
-				<p class="text__item">
-					У меня класс text__item. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis rem nostrum veniam voluptas sapiente quod deserunt soluta! Aspernatur quod commodi atque sapiente rerum quo at voluptatibus vitae. Eos, ducimus?
-				</p>
+			<div class="block">
+				<h2 id="inline">Inline CSS</h2>
 				<p>
-					Я следующий после text__item. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis rem nostrum veniam voluptas sapiente quod deserunt soluta! Aspernatur quod commodi atque sapiente rerum quo at voluptatibus vitae. Eos, ducimus?
+					Inline CSS — это встроенные стили, которые встраиваются только в
+					определенный тег html. Например, к какому-нибудь абзацу. Работает
+					через атрибут <mark>style</mark> .
 				</p>
-				<p>
-					Я следующий после text__item. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis rem nostrum veniam voluptas sapiente quod deserunt soluta! Aspernatur quod commodi atque sapiente rerum quo at voluptatibus vitae. Eos, ducimus?
+				<h2 id="style">Тег style</h2>
+				<p class="text">
+					Тег style применяется для определения стилей элементов
+					веб-страницы. Можно задавать более чем один тег style.
 				</p>
-				<p>
-					Я следующий после text__item. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis rem nostrum veniam voluptas sapiente quod deserunt soluta! Aspernatur quod commodi atque sapiente rerum quo at voluptatibus vitae. Eos, ducimus?
+				<p class="text item">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. In alias
+					officia harum assumenda dolore totam hic. Quisquam sapiente odio
+					saepe, vitae praesentium est ut molestiae ullam provident officiis?
+					Quo, repellendus
 				</p>
-				<h2>Заголовок 3</h2>
+				<h2 id="link">Подключение css к html отдельным файлом</h2>
 				<p>
-					Lorem <span>ipsum</span>, dolor sit amet consectetur <a href="">adipisicing</a> elit. Minus facilis rem nostrum veniam voluptas sapiente quod deserunt soluta! Aspernatur quod commodi atque sapiente rerum quo at voluptatibus vitae. Eos, ducimus?
-				</p>
-				<h3>Заголовок 2</h3>
-				<p><img width="150" src="img/image.jpg" alt=""></p>
-				<h4>Заголовок 1</h4>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis rem nostrum veniam voluptas sapiente quod deserunt soluta! Aspernatur quod commodi atque sapiente rerum quo at voluptatibus vitae. Eos, ducimus?
+					Тег <span>link подключает CSS файлы на HTML страницу. Кроме того, link
+					подключает некоторые другие файлы, например, фавикон.</span> (Фавикон - это
+					ярлычок сайта, который виден во вкладке браузера. Его также можно
+					увидеть в некоторых поисковиках при поиске напротив сайтов, например в
+					Яндексе).
+					<br />
+
+					У данного тега очень много атрибутов и они могут принимать
+					разнообразные значения, однако в реальной жизни они все практически не
+					используются. Самое популярное - это подключение CSS и добавление
+					фавикона.<br />
+
+					Как подключить CSS в HTML5:<mark>"link rel="stylesheet" href="style.css""</mark>.
+					В более ранних версиях нужно было добавлять
+					атрибут type в значении
+					text/css. В HTML5 так тоже можно делать, но это не обязательно. Как
+					подключить фавикон: "link href="favicon.ico" rel="shortcut icon"
+					type="image/x-icon""". Тег link не требует закрывающего тега.
 				</p>
 			</div>
+			<img src="img/css.png" alt="каскадные таблицы стилей">
 		</main>
 		<footer class="footer">
-			Я Подвал
+			<p class="footer__text">
+				CSS <a class="footer__link" target="_blank"
+					href="https://ru.wikipedia.org/wiki/CSS">википедия</a>
+			</p>
 		</footer>
 	</body>
 </html>
