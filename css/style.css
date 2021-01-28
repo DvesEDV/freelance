@@ -35,25 +35,38 @@ h2 {
 }
 
 #style {
-	color: rgb(114, 255, 71);
+  color: rgb(114, 255, 71);
 }
 
 p {
-	color: tomato;
+  color: tomato;
 }
 
-p.text 	{
-	color: firebrick;
+p.text {
+  color: firebrick;
 }
 
 .text.item {
-	color: wheat;
+  color: wheat;
 }
 
 p span {
-	color: yellow;
+  color: yellow;
 }
 
 .footer__link {
   color: green;
+}
+
+.main,
+.second {
+  font-size: 20px;
+}
+
+p > span {
+  font-weight: bold;
+}
+
+.second__text span {
+  color: black;
 }
