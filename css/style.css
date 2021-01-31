@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700&display=swap");
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Medium.woff2") format("woff2"),
+    url("../fonts/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Стили обнуления */
 *,
 *::before,
@@ -28,10 +57,52 @@ h6 {
 img {
   vertical-align: top;
 }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
 /* --------------- */
+
+h1 {
+  font-family: "Lora", serif;
+  font-size: 52px;
+  line-height: 127%;
+  text-indent: 25px;
+  text-shadow: 5px 10px 5px rgb(228, 188, 188);
+}
+
+.title__span {
+  color: rgba(221, 44, 0, 1);
+}
+
+.text {
+  white-space: nowrap;
+  color: #c10020;
+}
+
+.text_item {
+  text-transform: capitalize;
+}
+
+.text__span {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-size: 22px;
+}
 
 h2 {
   color: red;
+  text-decoration: line-through;
+  font-size: 24px;
+  text-align: center;
+}
+
+.subtitle {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 #style {
@@ -54,6 +125,10 @@ p span {
   color: yellow;
 }
 
+.shadow {
+  text-shadow: 2px 2px 5px rgb(245, 173, 173);
+}
+
 .footer__link {
   color: green;
 }
@@ -67,6 +142,12 @@ p > span {
   font-weight: bold;
 }
 
+.second__text {
+	text-align: justify;
+}
+
 .second__text span {
   color: black;
+  letter-spacing: 5px;
+  word-spacing: 10px;
 }
