@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
-		<title>Lesson 4</title>
+		<title>Lesson 5</title>
 	</head>
 	<body>
 		<header class="header">
@@ -13,15 +13,18 @@
 				<ul class="menu__list">
 					<li><a href="#inline">Инлайновые стили</a></li>
 					<li><a href="#style">Тег style</a></li>
-					<li><a href="#link">Тег link</a></li>
+					<li><a href="#link">Сказка про колобка</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main class="main">
 			<div class="block">
-				<h1 id="inline" class="title"><span class="title__span">Revolutionary</span>  co-working space to realize your innovation</h1>
-				<p>
-					 In frispes, we spearhead new initiatives and provide mentorship to a new startup, and help grow their <span class="text__span">opportunities</span>  in key local, regional and global markets
+				<h1 id="inline" class="title"><span class="title__span">Revolutionary</span>
+					co-working space to realize your innovation</h1>
+				<p class="block__text">
+					In frispes, we spearhead new initiatives and provide mentorship to a new
+					startup, and help grow their <span class="text__span">opportunities</span>
+					in key local, regional and global markets
 				</p>
 				<h2 id="style" class="subtitle">Тег style</h2>
 				<p class="text">
@@ -30,40 +33,119 @@
 				</p>
 				<p class="text_item">
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. In alias
-					officia harum assumenda dolore totam hic. Quisquam sapiente odio
+					<b>officia harum </b>assumenda dolore totam hic. Quisquam sapiente odio
 					saepe, vitae praesentium est ut molestiae ullam provident officiis?
 					Quo, repellendus
 				</p>
-				<h2 id="link">Подключение css к html отдельным файлом</h2>
-				<p>
-					Тег <span>link подключает CSS файлы на HTML страницу. Кроме того, link
-						подключает некоторые другие файлы, например, фавикон.</span> (Фавикон -
-					это
-					ярлычок сайта, который виден во вкладке браузера. Его также можно
-					увидеть в некоторых поисковиках при поиске напротив сайтов, например в
-					Яндексе).
-					<br />
-
-					У данного тега очень много атрибутов и они могут принимать
-					разнообразные значения, однако в реальной жизни они все практически не
-					используются. Самое популярное - это подключение CSS и добавление
-					фавикона.<br />
-
-					Как подключить CSS в HTML5:<mark>"link rel="stylesheet" href="style.css""</mark>.
-					В более ранних версиях нужно было добавлять
-					атрибут type в значении
-					text/css. В HTML5 так тоже можно делать, но это не обязательно. Как
-					подключить фавикон: "link href="favicon.ico" rel="shortcut icon"
-					type="image/x-icon""". Тег link не требует закрывающего тега.
+				<h2 id="link" class="skazka" title="Сказка для маленьких и не очень">Сказка про колобка</h2>
+				<div class="kolobok">
+					<img src="img/kolobok.jpg" alt="" class="kolobok__img">
+				</div>
+				<p class="kolobok__text">
+					Жили-были старик со старухой. Вот и говорит старик старухе:
+					— Поди-ка, старуха, по коробу поскреби, по сусеку помети, не наскребешь ли
+					муки на колобок.
+					Взяла старуха крылышко, по коробу поскребла, по сусеку помела и наскребла
+					муки горсти две.
+					Замесила муку на сметане, состряпала колобок, изжарила в масле и на окошко
+					студить положила.
+					Колобок полежал, полежал, взял да и покатился — с окна на лавку, с лавки на
+					пол, пó полу к двери, прыг через порог — да в сени, из сеней на крыльцо, с
+					крыльца на двор, со двора за ворота, дальше и дальше.
+					Катится Колобок по дороге, навстречу ему Заяц:
+					— Колобок, Колобок, я тебя съем!
+					— Не ешь меня, Заяц, я тебе песенку спою:
 				</p>
-			</div>
-			<div class="second">
-				<p class="second__text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="shadow">Vitae saepe molestiae aut</span> nostrum iste voluptas, dignissimos non delectus eligendi. Sint magnam voluptates nihil explicabo soluta necessitatibus repellendus repellat quaerat inventore!Suscipit magni id atque, doloremque asperiores minima omnis, autem ab obcaecati, similique sit aspernatur exercitationem cupiditate ipsa a sunt? Animi aperiam aspernatur aut sit voluptatibus non numquam vel? Ullam, doloremque.
+
+				<p class="kolobok__text song">
+					Я Колобок, Колобок,
+					Я по коробу скребен,
+					По сусеку метен,
+					На сметане мешон
+					Да в масле пряжон,
+					На окошке стужон.
+					Я от дедушки ушел,
+					Я от бабушки ушел,
+					От тебя, зайца, подавно уйду!
 				</p>
-				
+
+				<p class="kolobok__text">
+					И покатился по дороге — только Заяц его и видел!
+					Катится Колобок, навстречу ему Волк:
+					— Колобок, Колобок, я тебя съем!
+					— Не ешь меня, Серый Волк, я тебе песенку спою:
+				</p>
+
+				<p class="kolobok__text song">
+					Я Колобок, Колобок,
+					Я по коробу скребен,
+					По сусеку метен,
+					На сметане мешон
+					Да в масле пряжон,
+					На окошке стужон.
+					Я от дедушки ушел,
+					Я от бабушки ушел,
+					Я от зайца ушел,
+					От тебя, волк, подавно уйду!
+				</p>
+
+				<p class="kolobok__text">
+					И покатился по дороге — только Волк его и видел!
+					Катится Колобок, навстречу ему Медведь:
+					— Колобок, Колобок, я тебя съем!
+					— Где тебе, косолапому, съесть меня!
+				</p>
+
+				<p class="kolobok__text song">
+					Я Колобок, Колобок,
+					Я по коробу скребен,
+					По сусеку метен,
+					На сметане мешон
+					Да в масле пряжон,
+					На окошке стужон.
+					Я от дедушки ушел,
+					Я от бабушки ушел,
+					Я от зайца ушел,
+					Я от волка ушел,
+					От тебя, медведь, подавно уйду!
+				</p>
+				<p class="kolobok__text">
+
+					И опять покатился — только Медведь его и видел!
+					Катится Колобок, навстречу ему Лиса:
+					— Колобок, Колобок, куда катишься?
+					— Качусь по дорожке.
+					— Колобок, Колобок, спой мне песенку!
+					Колобок и запел:
+				</p>
+
+				<p class="kolobok__text song">
+					Я Колобок, Колобок,
+					Я по коробу скребен,
+					По сусеку метен,
+					На сметане мешон
+					Да в масле пряжон,
+					На окошке стужон.
+					Я от дедушки ушел,
+					Я от бабушки ушел,
+					Я от зайца ушел,
+					Я от волка ушел,
+					От медведя ушел,
+					От тебя, лисы, нехитро уйти!
+				</p>
+
+				<p class="kolobok__text">
+					А Лиса говорит:
+					— Ах, песенка хороша, да слышу я плохо. Колобок, Колобок, сядь ко мне на
+					носок да спой еще разок, погромче.
+					Колобок вскочил Лисе на нос и запел погромче ту же песенку.
+					А Лиса опять ему:
+					— Колобок, Колобок, сядь ко мне на язычок да пропой в последний разок.
+					Колобок прыг Лисе на язык, а Лиса его — гам! — и съела.
+				</p>
+<div class="fox"><img src="img/fox.jpg" alt="Сейчас лиса съест колобка" class="img-fox"></div>
 			</div>
-			<img src="img/css.png" alt="каскадные таблицы стилей">
+			<img class="img__css" src="img/css.png" alt="каскадные таблицы стилей">
 		</main>
 		<footer class="footer">
 			<p class="footer__text">

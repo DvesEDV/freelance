@@ -34,6 +34,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 li {
   list-style: none;
@@ -61,93 +62,95 @@ img {
 body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
+  padding: 30px;
 }
 
 /* --------------- */
 
+.menu__list {
+  display: flex;
+  margin-left: 50px;
+}
+
+.menu__list li {
+  margin-right: 20px;
+}
+
 h1 {
   font-family: "Lora", serif;
   font-size: 52px;
+  font-weight: bold;
   line-height: 127%;
-  text-indent: 25px;
+/*text-indent: 25px;*/
   text-shadow: 5px 10px 5px rgb(228, 188, 188);
+  width: 40%;
+  padding: 0 0 0 20px;
+  display: inline-block;
+}
+
+.block__text {
+	display: inline-block;
+	width: 25%;
+	line-height: 250%;
+}
+
+.text__span {
+	text-decoration: underline;
 }
 
 .title__span {
   color: rgba(221, 44, 0, 1);
 }
 
+h2 {
+	text-align: center;
+	color: rgb(253, 14, 14);
+}
+
 .text {
-  white-space: nowrap;
-  color: #c10020;
+	margin: 5px 0 10px 35px;
 }
 
 .text_item {
-  text-transform: capitalize;
+	text-indent: 20px;
+}
+.skazka {
+
 }
 
-.text__span {
-  text-decoration: underline;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: bold;
-  font-size: 22px;
+.kolobok {
+	margin: 30px
 }
 
-h2 {
-  color: red;
-  text-decoration: line-through;
-  font-size: 24px;
-  text-align: center;
+.kolobok__img {
+	display: block;
+	margin: 0 auto;
 }
 
-.subtitle {
-  text-decoration: none;
-  text-transform: uppercase;
+.kolobok__text {
+	text-indent: 20px;
+	margin: 0 0 10px 0;
+	padding: 10px;
 }
 
-#style {
-  color: rgb(114, 255, 71);
+.song {
+	overflow: auto;
+	max-width: 250px;
+	height: 100px;
+	text-align: center;
+	margin: 10px auto;
+	
 }
 
-p {
-  color: tomato;
+.fox {
+	text-align: center;
 }
 
-p.text {
-  color: firebrick;
+.img-fox {
+	width: 50%;
 }
 
-.text.item {
-  color: wheat;
-}
-
-p span {
-  color: yellow;
-}
-
-.shadow {
-  text-shadow: 2px 2px 5px rgb(245, 173, 173);
-}
-
-.footer__link {
-  color: green;
-}
-
-.main,
-.second {
-  font-size: 20px;
-}
-
-p > span {
-  font-weight: bold;
-}
-
-.second__text {
-	text-align: justify;
-}
-
-.second__text span {
-  color: black;
-  letter-spacing: 5px;
-  word-spacing: 10px;
+.img__css {
+	margin: 20px 20px 20px -30px;
+	max-width: 100%;
 }
